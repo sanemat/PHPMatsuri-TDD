@@ -1,6 +1,6 @@
 <?php
-include_once 'lime.php';
-
+require_once 'lime.php';
+require_once 'FizzBuzz.php';
 $t = new lime_test(null,new lime_output_color(true));
 
 $fizzBuzz = new FizzBuzz();

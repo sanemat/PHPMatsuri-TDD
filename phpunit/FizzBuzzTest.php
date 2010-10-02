@@ -2,20 +2,22 @@
 require_once 'FizzBuzz.php';
 class FizzBuzzTest extends PHPUnit_Framework_TestCase
 {
+  protected $fb;
+  protected function setUp()
+  {
+    $this->fb = new FizzBuzz();
+  }
   public function testOne()
   {
-    $fb = new FizzBuzz();
-    $this->assertEquals(1, $fb->say(1));
+    $this->assertEquals(1, $this->fb->say(1));
   }
   public function testTwo()
   {
-    $fb = new FizzBuzz();
-    $this->assertEquals(2, $fb->say(2));
+    $this->assertEquals(2, $this->fb->say(2));
   }
   public function testThree()
   {
-    $fb = new FizzBuzz();
-    $this->assertEquals('Fizz', $fb->say(3), '3のときFizzであること');
+    $this->assertEquals('Fizz', $this->fb->say(3), '3のときFizzであること');
   }
 }
 ?>

@@ -1,9 +1,10 @@
 <?php
 class FizzBuzzTest extends PHPUnit_Framework_TestCase
 {
-  public function testFail()
+  public function testOne()
   {
-    $this->fail('initial fail');
+    $fb = new FizzBuzz();
+    $this->assertEquals(1, $fb->say(1));
   }
 }
 ?>

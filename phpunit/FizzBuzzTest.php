@@ -27,5 +27,9 @@ class FizzBuzzTest extends PHPUnit_Framework_TestCase
   {
     $this->assertEquals('Buzz', $this->fb->say(5), '5のときBuzzであること');
   }
+  public function testFifteen()
+  {
+    $this->assertEquals('FizzBuzz', $this->fb->say(15), '15のときFizzBuzzであること');
+  }
 }
 ?>

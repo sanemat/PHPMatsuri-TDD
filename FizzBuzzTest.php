@@ -8,4 +8,5 @@ $t->is($fizzBuzz->say(1), 1);
 $t->is($fizzBuzz->say(2), 2);
 $t->is($fizzBuzz->say(3), 'Fizz', '3のときにFizzを返すこと');
 $t->is($fizzBuzz->say(6), 'Fizz', '6のときにFizzを返すこと');
+$t->is($fizzBuzz->say(5), 'Buzz', '5のときにBuzzを返すこと');
 ?>

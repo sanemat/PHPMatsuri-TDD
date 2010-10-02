@@ -12,5 +12,10 @@ class FizzBuzzTest extends PHPUnit_Framework_TestCase
     $fb = new FizzBuzz();
     $this->assertEquals(2, $fb->say(2));
   }
+  public function testThree()
+  {
+    $fb = new FizzBuzz();
+    $this->assertEquals('Fizz', $fb->say(3), '3のときFizzであること');
+  }
 }
 ?>
